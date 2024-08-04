@@ -1,14 +1,3 @@
-import coverStrangeJhonsons from '../assets/Shorts/BackGrounds/strange-jhonsons.jpg'
-import coverDollMaker from '../assets/Shorts/BackGrounds/doll-maker.jpg'
-import coverPeephole from '../assets/Shorts/BackGrounds/peephole.jpg'
-import coverJigsaw from '../assets/Shorts/BackGrounds/the-jigsaw.jpg'
-import coverSmilingMan from '../assets/Shorts/BackGrounds/smiling-man.jpg'
-import coverClosingTime from '../assets/Shorts/BackGrounds/closing-time.jpg'
-import coverCurve from '../assets/Shorts/BackGrounds/curve.jpg'
-import coverMakeSandwich from '../assets/Shorts/BackGrounds/make-me-sandwich.jpg'
-import coverLightsOut from '../assets/Shorts/BackGrounds/lights-out.jpg'
-import coverFirstDay from '../assets/Shorts/BackGrounds/first-day.jpg'
-
 export const shortFilms = [
     {
         name: 'My first day',
@@ -18,7 +7,7 @@ export const shortFilms = [
         producer: "Brandon Hall",
         cast: ['Reiley Cook'],
         year: 2017,
-        cover: coverFirstDay,
+        cover: 'https://s1.dmcdn.net/v/MrD0Q1QF3eUVUZ2Ie/x1080',
         url: 'https://www.youtube.com/embed/209Sx07OPnU',
         synopsis: "Who isn’t excited on their first day of school?"
     },
@@ -30,7 +19,7 @@ export const shortFilms = [
         producer: "David Sandberg",
         cast: ['Lotta Losten'],
         year: 2013,
-        cover: coverLightsOut,
+        cover: 'https://m.media-amazon.com/images/M/MV5BNjYwMTY5MTgxOF5BMl5BanBnXkFtZTgwOTAyODgxOTE@._V1_.jpg',
         url: 'https://www.youtube.com/embed/FUQhNGEu2KA',
         synopsis: "Something is wrong at home; don't turn off the lights."
     },
@@ -42,7 +31,7 @@ export const shortFilms = [
         producer: "Peter Hatch, Matt Hamilton and Kerry-lee Finkle",
         cast: ['Anne Shepherd', 'Peter Hodgins'],
         year: null,
-        cover: coverMakeSandwich,
+        cover: 'https://www.indieshortsmag.com/wp-content/uploads/2020/03/Make-Me-a-Sandwich-Short-Film-Review-Indie-Shorts-Mag-2.jpg',
         url: 'https://www.youtube.com/embed/pfGEdmZyVyY&t=8s',
         synopsis: "Marcy, a wife traumatized by her abusive husband, makes him a sandwich every time he yells at her for one."
     },
@@ -54,7 +43,7 @@ export const shortFilms = [
         producer: "Ahren Morris",
         cast: ['Laura Jane Turner'],
         year: 2016,
-        cover: coverCurve,
+        cover: '//static.shortoftheweek.com/wp-content/uploads/2017/06/CURVE_HERO_1.jpg',
         url: 'https://www.youtube.com/embed/2dD3Fawk4y0',
         synopsis: "The shortfilm centers on a young woman who finds herself trapped on a curved, slippery surface with no apparent way to escape."
     },
@@ -66,7 +55,7 @@ export const shortFilms = [
         producer: "Raymond Power, Noah Lang, Hannah May Keller",
         cast: ['Adata Toop', "Hailey Stubblefield", 'Raymond Power'],
         year: 2024,
-        cover: coverClosingTime,
+        cover: 'https://m.media-amazon.com/images/M/MV5BNjBiNjk1MTgtZDhjNi00ZTUzLTk3Y2YtZGMwNDYwZGFmZDhjXkEyXkFqcGc@._V1_.jpg',
         url: 'https://www.youtube.com/embed/xm6NjBngIx0',
         synopsis: "Emma has something important to tell her boyfriend, but when she arrives to meet him at the local diner and he's missing, she has a gut feeling that something is wrong."
     },
@@ -78,7 +67,7 @@ export const shortFilms = [
         producer: "Michael Evans",
         cast: ['Sean Simon', "Paul Foltz"],
         year: 2013,
-        cover: coverSmilingMan,
+        cover: 'https://m.media-amazon.com/images/M/MV5BNTdjZTJlYjktZDlkZS00NzBjLTg2NTktMmY4N2IwNDI4MjIyXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_.jpg',
         url: 'https://www.youtube.com/embed/_u6Tt3PqIfQ',
         synopsis: "A stranger with a sinister smile keeps following you down the street at night."
     },
@@ -90,7 +79,7 @@ export const shortFilms = [
         producer: "Basil and Rashad Al-Safar",
         cast: ['Pedro Monteiro', "Daragh 0'Malley"],
         year: 2017,
-        cover: coverJigsaw,
+        cover: 'https://m.media-amazon.com/images/M/MV5BMDNlNjBhZjYtZDAyZS00NmM2LThiMWUtNjgwN2MwYTgyMWVkXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_.jpg',
         url: 'https://www.youtube.com/embed/gs5zQBBOXrA',
         synopsis: "A man buys a puzzle in an old shop; the last piece will bring a great surprise."
     },
@@ -102,7 +91,7 @@ export const shortFilms = [
         producer: "Carys Edwards",
         cast: ['Tim Lueke'],
         year: 2018,
-        cover: coverPeephole,
+        cover: 'https://m.media-amazon.com/images/M/MV5BZGVhNjRjMjYtY2ViZC00NTJkLWIxZTMtZjhlNmE1NTA2ZGMwXkEyXkFqcGdeQXVyNDA1NDYxNA@@._V1_.jpg',
         url: 'https://www.youtube.com/embed/dKcOTr7N4lE',
         synopsis: "A man answers a knock at the door."
     },
@@ -114,7 +103,7 @@ export const shortFilms = [
         producer: "Richard D'Angelo, Chloe Na",
         cast: ['Perri Lauren', 'Sean Meehan', 'Dan Berkey', 'Tony Hutaj', 'Carlon Jeffery'],
         year: 2017,
-        cover: coverDollMaker,
+        cover: 'https://m.media-amazon.com/images/M/MV5BMjQ3N2M1OWMtNDJjZC00NjM3LTg2YWMtZmQ2YWMyZDJjMGY3XkEyXkFqcGdeQXVyMzQ2NTQyMjA@._V1_.jpg',
         url: 'https://www.youtube.com/embed/XdmefxcnL38',
         synopsis: "A couple's sanity spirals out of control as they come into the possession of a doll that acts as a magical surrogate for their lost child."
     },
@@ -126,7 +115,7 @@ export const shortFilms = [
         producer: 'Alejandro de Leon',
         cast: ['Billy Mayo', 'Brandon Greenhouse', 'Angela Bullock', 'Danielle Watts', 'Carlon Jeffery'],
         year: 2011,
-        cover: coverStrangeJhonsons,
+        cover: 'https://m.media-amazon.com/images/M/MV5BNmIyYmU1YjItNjAyMS00YThlLTk3OTktNjZiNWIwNzE3ZDA3XkEyXkFqcGdeQXVyMTEzNzczMA@@._V1_.jpg',
         url: 'https://www.youtube.com/embed/taj2BwNSq18?t=228s',
         synopsis: 'It follows the disturbing story of the Johnson family, focusing on the dark and unsettling dynamics between a father and his son.'
     }
