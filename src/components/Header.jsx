@@ -13,9 +13,9 @@ export default function Header() {
 
     return (
     <header className='bg-black flex items-center justify-between select-none h-20 w-screen text-slate-50 px-6'>
-        <h1 className='text-2xl hover:text-slate-500 transition-colors duration-500 ease-in-out'>Treehouse of Horror</h1>
+        <h1 className='text-lg sm:text-2xl hover:text-slate-500 transition-colors duration-500 ease-in-out'>Treehouse of Horror</h1>
         <div className='flex items-center gap-8 relative'>
-            {!isDropdownOpen ? <p className='cursor-pointer hover:text-slate-500 transition-colors duration-500 ease-in-out' onClick={toggleDropdown}>Categories</p> : <p className='cursor-pointer hover:text-slate-500 mr-8 transition-colors duration-500 ease-in-out' onClick={toggleDropdown}>X</p>}
+            {!isDropdownOpen ? <p className='text-sm sm:text-base cursor-pointer hover:text-slate-500 transition-colors duration-500 ease-in-out' onClick={toggleDropdown}>Categories</p> : <p className='cursor-pointer hover:text-slate-500 mr-8 transition-colors duration-500 ease-in-out' onClick={toggleDropdown}>X</p>}
             {isDropdownOpen && (
                     <div className='absolute top-full -right-2 mt-2 w-48 bg-black shadow-lg rounded-md'>
                         <ul>

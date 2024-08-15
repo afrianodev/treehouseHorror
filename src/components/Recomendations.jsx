@@ -43,11 +43,11 @@ export default function Recomendations() {
     </iframe>
   </div> : 
   <section style={backgroundImageStyle} className='h-[80vh] pb-[5%]'>
-    <div className='w-[50vw] h-full flex flex-col gap-4 ml-[3%] justify-end text-slate-50 text-justify'>
-      <div className='max-w-[70%] bg-black bg-opacity-50 p-4 rounded-lg flex flex-col gap-4'>
+    <div className='w-[90vw] sm:w-[50vw] h-full flex flex-col gap-4 ml-[3%] justify-end text-slate-50 text-justify'>
+      <div className='max-w-[100%] sm:max-w-[70%] bg-black bg-opacity-50 p-4 rounded-lg flex flex-col gap-4'>
         <h2 className='text-xl '>{shortFilms[randomMovie].name}</h2>
         <p>{shortFilms[randomMovie].synopsis}</p>
-        <div className="flex gap-8 text-xs text-gray-400">
+        <div className="flex gap-4 sm:gap-8 text-xs text-gray-400">
           <p>{shortFilms[randomMovie].duration} mins</p>
           <p>{shortFilms[randomMovie].director}</p>
           <p>{shortFilms[randomMovie].year}</p>
