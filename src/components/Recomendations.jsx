@@ -1,11 +1,13 @@
 import { useState } from "react"
 import { shortFilms } from "./shortFilms";
+import {motion} from 'framer-motion'
 
 export default function Recomendations() {
     const randomNum = () => Math.floor(Math.random() * shortFilms.length)
 
     const [isPlaying, setIsPlaying] = useState(false);
-    const [randomMovie, setRandomMovie] = useState(randomNum)
+    const [randomMovie, setRandomMovie] = useState(randomNum);
+    const [isChanging, setIsChanging] = useState(false);
     
     
     function handlePlay() {
@@ -13,7 +15,11 @@ export default function Recomendations() {
     }
     
     function handleRandomMovie() {
-      setRandomMovie(randomNum);
+      setIsChanging(true);
+      setTimeout(() => {
+        setRandomMovie(randomNum);
+        setIsChanging(false);
+      }, 500);
     }
 
     const backgroundImageStyle = {
@@ -22,6 +28,28 @@ export default function Recomendations() {
       backgroundPosition: 'center',
       // height: '100vh',
       width: '100vw',
+    };
+
+    const collapseExpandVariant = {
+      collapsed: {
+        height: 0, // Collapse the height
+        transition: { duration: 0.5, ease: 'easeInOut' },
+      },
+      expanded: {
+        height: 'auto', // Expand to the full content height
+        transition: { duration: 0.5, ease: 'easeInOut' },
+      },
+    };
+
+    const textFadeVariant = {
+      hidden: {
+        opacity: 0, // Hide text
+        transition: { duration: 0.4, ease: 'easeInOut' },
+      },
+      visible: {
+        opacity: 1, // Show text
+        transition: { duration: 0.4, ease: 'easeInOut' },
+      },
     };
 
     return(
@@ -44,7 +72,16 @@ export default function Recomendations() {
   </div> : 
   <section style={backgroundImageStyle} className='h-[80vh] pb-[5%]'>
     <div className='w-[90vw] sm:w-[50vw] h-full flex flex-col gap-4 ml-[3%] justify-end text-slate-50 text-justify'>
-      <div className='max-w-[100%] sm:max-w-[70%] bg-black bg-opacity-50 p-4 rounded-lg flex flex-col gap-4'>
+      <motion.div className='max-w-[100%] sm:max-w-[70%] bg-black bg-opacity-50 p-4 rounded-lg flex flex-col gap-4 overflow-hidden'
+      initial="collapsed"
+      animate={isChanging ? "collapsed" : "expanded"}
+      variants={collapseExpandVariant}>
+        <motion.div
+                initial="hidden"
+                animate={isChanging ? "hidden" : "visible"}
+                variants={textFadeVariant} // Animate text opacity
+                className="flex flex-col gap-4"
+              >
         <h2 className='text-xl '>{shortFilms[randomMovie].name}</h2>
         <p>{shortFilms[randomMovie].synopsis}</p>
         <div className="flex gap-4 sm:gap-8 text-xs text-gray-400">
@@ -52,7 +89,8 @@ export default function Recomendations() {
           <p>{shortFilms[randomMovie].director}</p>
           <p>{shortFilms[randomMovie].year}</p>
         </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className='flex gap-6 items-center'>
         <div onClick={handlePlay} className='bg-white hover:bg-gray-400 hover:text-gray-800 flex gap-1 items-center justify-center text-black rounded-lg w-32 h-12 text-xl select-none cursor-pointer'>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="currentColor" className="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
