@@ -2,13 +2,13 @@ import { useState } from "react"
 import { shortFilms } from "./shortFilms";
 import {motion} from 'framer-motion'
 
-export default function Recomendations() {
-    const randomNum = () => Math.floor(Math.random() * shortFilms.length)
+const randomNum = () => Math.floor(Math.random() * shortFilms.length)
 
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [randomMovie, setRandomMovie] = useState(randomNum);
-    const [isChanging, setIsChanging] = useState(false);
-    
+export default function Recomendations() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [randomMovie, setRandomMovie] = useState(randomNum);
+  const [isChanging, setIsChanging] = useState(false);
+  
     
     function handlePlay() {
       setIsPlaying(!isPlaying)
