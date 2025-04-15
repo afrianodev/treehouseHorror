@@ -1,6 +1,8 @@
 import './App.css'
 import Header from './components/Header'
 import Recomendations from './components/Recomendations'
+import Footer from './components/Footer'
+import {motion} from 'framer-motion'
 
 function App() {
 
@@ -8,6 +10,7 @@ function App() {
   <>
   <Header />
   <Recomendations />
+  <Footer />
   </>
   )
 }

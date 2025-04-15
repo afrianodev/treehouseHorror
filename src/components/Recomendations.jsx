@@ -92,7 +92,7 @@ export default function Recomendations() {
         </motion.div>
       </motion.div>
       <div className='flex gap-6 items-center'>
-        <div onClick={handlePlay} className='bg-white hover:bg-gray-400 hover:text-gray-800 flex gap-1 items-center justify-center text-black rounded-lg w-32 h-12 text-xl select-none cursor-pointer'>
+        <div onClick={handlePlay} className='bg-yellow-500 hover:bg-gray-400 hover:text-gray-800 flex gap-1 items-center justify-center text-black rounded-lg w-32 h-12 text-xl select-none cursor-pointer'>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" fill="currentColor" className="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393"/>
         </svg>Play
         </div>
